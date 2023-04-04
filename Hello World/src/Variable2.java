@@ -1,4 +1,3 @@
-
 import java.util.Random;
 public class Variable2 {
 	public static void main(String[] args) {
@@ -33,10 +32,3 @@ public class Variable2 {
         System.out.println("あなたの年齢はおそらく"+(random.nextInt(100)+1)+"歳ですね？");
 	}
 }
-
-
-
-
-
-        
-
