@@ -1,11 +1,12 @@
 public class Variable1 {
 	public static void main(String[] args) {
-		String str = "山田太郎"; // String型
+		String str = "山田太郎";
+		String i = "男"; // String型
         int f = 19;
         double d = 174.2; // double型
  
         System.out.println("名前は " + str + " です。");
-        System.out.println("性別は男です。");
+        System.out.println("性別は"+ i +"です。");
         System.out.println("年齢は" + f + "歳です。");
         System.out.println("身長は" + d + "cmです。");
         System.out.println("よろしくお願いします。");
