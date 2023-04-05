@@ -1,7 +1,7 @@
 public class Variable1 {
 	public static void main(String[] args) {
 		String str = "山田太郎";
-		String i = "男"; // String型
+		char i = '男'; // String型
         int f = 19;
         double d = 174.2; // double型
  
