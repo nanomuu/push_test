@@ -1,3 +1,5 @@
+package lesson1_7;
+
 public class DateTypeChange {
 	public static void main(String[] args) {
 		
@@ -17,11 +19,10 @@ public class DateTypeChange {
 //		②変数 pi に「3」を掛けた値をコンソールに出力して下さい。
 //		④int型の変数 integer を宣言し、変数 pi を int型に型変換しコンソールに出力して下さい。
 		 double pi = 3.14;
-		 pi = pi * 20;
-	     System.out.println(pi);
-	     int integer = (int)pi;
-	     System.out.println(pi);
-	
+		 System.out.println(pi*3);
+		 int intenger = (int)pi;
+		  
+		 
 //		問３）
 //		①double型の変数を定義し、「2 + 6.0」を代入して下さい。
 //		　double型の変数をコンソールに出力して下さい。

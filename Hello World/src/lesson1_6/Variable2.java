@@ -1,3 +1,4 @@
+package lesson1_6;
 import java.util.Random;
 public class Variable2 {
 	public static void main(String[] args) {

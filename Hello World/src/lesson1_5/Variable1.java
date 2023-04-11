@@ -1,3 +1,4 @@
+package lesson1_5;
 public class Variable1 {
 	public static void main(String[] args) {
 		String str = "山田太郎";
