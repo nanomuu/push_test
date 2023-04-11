@@ -14,9 +14,6 @@ public class practice2 {
 	public static void main(String[] args) {
 		// 配列に1から9の値を格納
 		int num[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-				
-	    System.out.println("###掛け算の九九をループで表示###");
-
 		// 掛け算の九九をループで表示
 		for (int i =0; i < num.length; i++) {
 		for (int j = 0; j < num.length; j++) {

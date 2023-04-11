@@ -32,10 +32,10 @@ public class ConditionalExpression {
         if (score>=40 && score<=60){
             System.out.println(name+"さんは"+score+ "点です。もう少しでした。");
         }
-        if (score<=60 && score>=80){
+        if (score>=60 && score<=80){
             System.out.println(name+"さんは"+score+ "点です。よくできました。");
         }
-        if (score<=80){
+        if (score>=80){
             System.out.println(name+"さんは"+score+ "点です。たいへんよくできました。");
         }
         
@@ -46,5 +46,19 @@ public class ConditionalExpression {
 //		※④は System.out.println() のカッコ内に条件演算子（三項演算子）を使って、一行で書いてください。
 //		④もし変数 isTired が 0 であれば、変数 study を利用して「カリキュラムを続けます。」と表示する。
 		
+        int isTired;
+        isTired = 0;
+        String study;
+        study = "カリキュラム";
+        if (isTired==0) {
+			System.out.println("私はとても元気です。"); 
+		} else {
+			System.out.println("私は疲れています。");
+		}
+        if (isTired==0) {
+			System.out.println(study+"を続けます。"); 
+		} 
+        
+        
 	}
 }

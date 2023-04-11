@@ -21,7 +21,7 @@ public class DateTypeChange {
 		 double pi = 3.14;
 		 System.out.println(pi*3);
 		 int intenger = (int)pi;
-		  
+		 System.out.println(intenger);
 		 
 //		問３）
 //		①double型の変数を定義し、「2 + 6.0」を代入して下さい。
@@ -36,12 +36,15 @@ public class DateTypeChange {
 //		　int型の変数をコンソールに出力して下さい。
 	     double a = 2 + 6.0;
 	     System.out.println(a);
+	     
 	     int b = (int)a;
 	     System.out.println(b);
-	     String str = String.valueOf(d);
-	     System.out.println(str);
-	     String hoge = String.valueOf(d);
-	     int num = Integer.parseInt(hoge);
-		 System.out.println(num);  
+	     
+	     String c = String.valueOf(d);
+	     System.out.println(c);
+	    
+	    int num = b;
+	    String str = String.valueOf(num);
+        System.out.println(str);
 	}
 }

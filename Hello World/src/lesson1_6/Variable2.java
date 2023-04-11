@@ -29,7 +29,8 @@ public class Variable2 {
       //あなたの年齢を予想します。
       //あなたの年齢はおそらく〇〇歳ですね？
         Random random = new Random();
+        int num = random.nextInt(100) + 1;
         System.out.println("あなたの年齢を予想します。");
-        System.out.println("あなたの年齢はおそらく"+(random.nextInt(100)+1)+"歳ですね？");
+        System.out.println("あなたの年齢はおそらく"+num+"歳ですね？");
 	}
 }
