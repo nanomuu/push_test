@@ -6,10 +6,10 @@ public class DateTypeChange {
 //		問１）
 //		以下のプログラムを作成してください。
 //		①int型変数 i に 3 を代入する。
-//		②double型変数 d に i を代入する。
+//		＠️②double型変数 d に i を代入する。
 //		③変数 i と変数 d の値をそれぞれコンソールに表示する。
 		 int i = 3;
-		 int d = (int)i;
+		 double d = i;
 		 System.out.println(i);
 		 System.out.println(d);
 		
@@ -30,7 +30,7 @@ public class DateTypeChange {
 //		②int型の変数を定義し、double型の変数をint型に型変換して代入下さい。
 //		　int型の変数をコンソールに出力して下さい。
 	     
-//		③String型の変数を定義し、int型の変数をString型に型変換して代入して下さい。
+//		@③String型の変数を定義し、int型の変数をString型に型変換して代入して下さい。
 //		　String型の変数をコンソールに出力して下さい。
 //		④「②」で定義したint型変数に、String型の変数をint型に型変換して代入して下さい。
 //		　int型の変数をコンソールに出力して下さい。
@@ -40,11 +40,12 @@ public class DateTypeChange {
 	     int b = (int)a;
 	     System.out.println(b);
 	     
-	     String c = String.valueOf(d);
-	     System.out.println(c);
-	    
-	    int num = b;
-	    String str = String.valueOf(num);
-        System.out.println(str);
+	     String str1 = "0";
+	     int c = Integer.valueOf(str1); 
+	     System.out.println(c);  
+	     	     
+	     int num = b;
+	     String str = String.valueOf(num);
+         System.out.println(str);
 	}
 }
