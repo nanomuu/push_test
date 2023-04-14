@@ -37,7 +37,7 @@ public class Bool {
 //		boolean型変数 result_4 をコンソールに出力して下さい。
 		int g = 7;
 		boolean result_4; // boolean型の変数を宣言
-		result_4 = (g>=5||g<=10); // 【条件式】
+		result_4 = (g<=5||g>=10); // 【条件式】
 	    System.out.println(result_4);
 		}
 	}
