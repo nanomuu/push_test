@@ -43,9 +43,8 @@ public class DateTypeChange {
 	     String c = Integer.valueOf(b).toString();
 	     System.out.println(c);
 	     
-	     int num = b;
-	     String str =Integer.toString(num);
-	     System.out.println(str);
+	     int e = Integer.valueOf(b).intValue();
+         System.out.println(e);
 	     
 	}
 }
