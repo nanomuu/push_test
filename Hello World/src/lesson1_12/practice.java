@@ -17,19 +17,19 @@ package lesson1_12;
 public class practice {
 
 	public static void main(String[] args) {
-		//変数iを宣言(初期値1)
-		 int i=1;
-		 //iが100以下の間繰り返す
-		 while(i<=100){
-		 //もし2で割った余りが0なら偶数なので、それを表示する
-		 if(i%2==0){
-		 System.out.println(i+"は偶数です");
-		 }
-		//それ以外の数が奇数なので、それを表示する
-		 else {
-         System.out.println(i+"は奇数です");	 
-		 }
-		 i++;
-		 }
-		 }
-		 }
+	//変数iを宣言(初期値1)
+    int i=1;
+    //iが100以下の間繰り返す
+    while(i<=100){
+	//もし2で割った余りが0なら偶数なので、それを表示する
+	if(i%2==0){
+	System.out.println(i+"は偶数です");
+	}
+	//それ以外の数が奇数なので、それを表示する
+    else {
+    System.out.println(i+"は奇数です");	 
+	}
+    i++;
+	}
+  }
+}

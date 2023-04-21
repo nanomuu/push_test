@@ -12,15 +12,15 @@ package lesson1_10;
 public class practice2 {
 
 	public static void main(String[] args) {
+
 		// 配列に1から9の値を格納
-		int num[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
-		// 掛け算の九九をループで表示
-		for (int i =0; i < num.length; i++) {
-		for (int j = 0; j < num.length; j++) {
-		// 配列[ i番目]の値×配列[ j番目]の値
-		int kuku = num[i] * num[j];
-		System.out.println(num[i] + " × " + num[j] + " = " + kuku);
-			}			
-		}
-	}
+				int kuku[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+				// 掛け算の九九をループで表示
+				for (int i : kuku) {
+				for (int j :kuku) {
+				System.out.printf("%d*%d=%2d",i,j,i*j);
+		}		
+				System.out.println();		
+     }
+  }
 }
