@@ -18,7 +18,7 @@ public class practice2 {
 				// 掛け算の九九をループで表示
 				for (int i : kuku) {
 				for (int j :kuku) {
-				System.out.printf("%d*%d=%2d",i,j,i*j);
+				System.out.printf("%d×%d=%d"+" ",i,j,i*j);
 		}		
 				System.out.println();		
      }
