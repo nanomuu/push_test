@@ -20,7 +20,7 @@ public class Practice {
 	                {58,81,75}, 
 	                {86,68,79},
 	                {72,55,80}};
-	System.out.println("[2]");      
+	System.out.println();      
 	       
 	}
 
