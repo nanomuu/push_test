@@ -21,11 +21,11 @@ public class Practice {
 				         {58,81,75},
 				         {86,68,79},
 				         {72,55,80}};
-		// 配列を表示
-		System.out.println("生徒1：" + subjects[0] + test[0][0] + "点、" + subjects[1] + test[0][1] + "点、"+ subjects[2] + test[0][2] + "点");
-		System.out.println("生徒2：" + subjects[0] + test[1][0] + "点、" + subjects[1] + test[1][1] + "点、"+ subjects[2] + test[1][2] + "点");
-		System.out.println("生徒3：" + subjects[0] + test[2][0] + "点、" + subjects[1] + test[2][1] + "点、"+ subjects[2] + test[2][2] + "点");
-		System.out.println("生徒4：" + subjects[0] + test[3][0] + "点、" + subjects[1] + test[3][1] + "点、"+ subjects[2] + test[3][2] + "点");
+		    // 配列を表示
+		    System.out.println("生徒1：" + subjects[0] + test[0][0] + "点、" + subjects[1] + test[0][1] + "点、"+ subjects[2] + test[0][2] + "点");
+		    System.out.println("生徒2：" + subjects[0] + test[1][0] + "点、" + subjects[1] + test[1][1] + "点、"+ subjects[2] + test[1][2] + "点");
+		    System.out.println("生徒3：" + subjects[0] + test[2][0] + "点、" + subjects[1] + test[2][1] + "点、"+ subjects[2] + test[2][2] + "点");
+		    System.out.println("生徒4：" + subjects[0] + test[3][0] + "点、" + subjects[1] + test[3][1] + "点、"+ subjects[2] + test[3][2] + "点");
 		
 		// 科目毎の平均点
 		for (int i = 0; i < subjects.length; i++) {
