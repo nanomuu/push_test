@@ -14,7 +14,6 @@ package lesson1_15;
 
 public class Practice {
 	public static void main(String[] args) {
-
 		// 科目名
 		String[] subjects = {"国語","英語","数学"};
 		// 点数の配列を格納
@@ -27,16 +26,16 @@ public class Practice {
 		System.out.println("生徒2：" + subjects[0] + test[1][0] + "点、" + subjects[1] + test[1][1] + "点、"+ subjects[2] + test[1][2] + "点");
 		System.out.println("生徒3：" + subjects[0] + test[2][0] + "点、" + subjects[1] + test[2][1] + "点、"+ subjects[2] + test[2][2] + "点");
 		System.out.println("生徒4：" + subjects[0] + test[3][0] + "点、" + subjects[1] + test[3][1] + "点、"+ subjects[2] + test[3][2] + "点");
-
+		
 		// 科目毎の平均点
 		for (int i = 0; i < subjects.length; i++) {
-		int sum = 0;
-		for (int s = 0; s < test[i].length; s++) {
-		// 点数を加算していく
-	    sum += test[i][s];
-		}
-		//各教科の平均点
-		System.out.println(subjects[i] + "の平均点は" + (double)sum / test.length + "点です。");
+			int sum = 0;
+			for (int s = 0; s < test[i].length; s++) {
+				// 点数を加算していく
+				sum += test[i][s];
+			}
+			//各教科の平均点
+			System.out.println(subjects[i] + "の平均点は" + (double)sum / test.length + "点です。");
 		}
 	}
 }
