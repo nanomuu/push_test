@@ -14,12 +14,8 @@ public class DataTypeAndMemory {
 		System.out.println(c);
 		// Q4：円周率を小数点第二位まで変数に代入してコンソールに出力してください。
 		// 円周率
-		double d = 3.1415;
-		// 小数点第二位まで四捨五入
-		String e = String.format("%.2f", d);
-		// String型の数値をdouble型に変換
-		double f = Double.parseDouble(e);
-		System.out.println(f);	
+		double d = 3.14;
+		System.out.println(d);
 		// Q5：変数numsに「10, 100, 1000」が格納された配列を代入して、コンソールにメモリの番地が1のデータを出力してください。
 		// 参照型の配列
 		int[] nums = {10,100,1000};
@@ -27,9 +23,13 @@ public class DataTypeAndMemory {
 		System.out.println(nums[1]);
 		// Q6：Q5で作成した変数numsを変数bに代入し、その後変数bのメモリの番地が1のデータを「8」に上書きさせて
 		//     コンソールに変数numsと変数bのメモリの番地が1のデータを出力させて、変数nums値が変わることを確認してください。
-		// 1のデータを「8」に上書き
-		int[] b = {10,8,1000};
-		System.out.println(b[1]);	
+		// numにbを代入
+		int[] b = nums.clone();	
+		//メモリの番地が1のデータを「8」に上書き
+		b[1] = 8;
+		// メモリの番地が1のデータを出力
+		System.out.println(b[1]);
+	    System.out.println(nums[1]);
 	}
 
 }
