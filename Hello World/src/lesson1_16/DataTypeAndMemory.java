@@ -1,8 +1,8 @@
 package lesson1_16;
 
 public class DataTypeAndMemory {
-
 	public static void main(String[] args) {
+		
 		// Q1：「A」という文字列を変数に代入してコンソールに出力してください。
 		char a = 'A';
 		System.out.println(a);
@@ -27,9 +27,10 @@ public class DataTypeAndMemory {
 		int[] b = nums.clone();	
 		//メモリの番地が1のデータを「8」に上書き
 		b[1] = 8;
+		nums[1] = 8;
 		// メモリの番地が1のデータを出力
 		System.out.println(b[1]);
-	    System.out.println(nums[1]);
+		System.out.println(nums[1]);
 	}
 
 }
