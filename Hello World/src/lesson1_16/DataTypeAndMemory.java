@@ -1,5 +1,7 @@
 package lesson1_16;
 
+import java.util.Arrays;
+
 public class DataTypeAndMemory {
 	public static void main(String[] args) {
 		
@@ -23,14 +25,14 @@ public class DataTypeAndMemory {
 		System.out.println(nums[1]);
 		// Q6：Q5で作成した変数numsを変数bに代入し、その後変数bのメモリの番地が1のデータを「8」に上書きさせて
 		//     コンソールに変数numsと変数bのメモリの番地が1のデータを出力させて、変数nums値が変わることを確認してください。
-		// numにbを代入
+		// numsにbを代入
 		int[] b = nums.clone();	
 		//メモリの番地が1のデータを「8」に上書き
 		b[1] = 8;
-		nums[1] = 8;
+		// 変数numsを出力
+		System.out.println(Arrays.toString(nums));
 		// メモリの番地が1のデータを出力
 		System.out.println(b[1]);
-		System.out.println(nums[1]);
 	}
 
 }
