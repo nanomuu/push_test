@@ -13,7 +13,7 @@ public class practice2 {
 
 	public static void main(String[] args) {
 
-		// 配列に1から9の値を格納
+		        // 配列に1から9の値を格納
 				int kuku[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 				// 掛け算の九九をループで表示
 				for (int i : kuku) {

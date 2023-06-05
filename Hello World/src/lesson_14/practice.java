@@ -22,27 +22,35 @@
 package lesson_14;
 
 public class practice {
-
-public static void main(String[] args) {
-		// TODO 自動生成されたメソッド・スタブ
-	String[] arr1 = {"a","b","c","d","e","f","g","h","i","j"};
-	String str = "i";
-	for (int i = 0; i < arr1.length; i++) {
-        if (i > 3) {
-        break;
-    }
-     System.out.println(arr1[i]); 
-    }
-	for (String s : arr1) { 
-		if (s.equals(str)) {
-        continue;
+	public static void main(String[] args) {
+		// string型アルファベット配列を作成
+		String[] arr1 = {"a","b","c","d","e","f","g","h","i","j"};
+		// string iを定義
+		String str = "i";
+		// ループ文
+		for (int i = 0; i < arr1.length; i++) {
+			// iが3より大きい時にループを抜け出す
+			if (i > 3) {
+			// brake文を使用
+			break;
+		}
+		// a~dを表示
+		System.out.println(arr1[i]); 
+		}
+		// ループ文
+		for (String s : arr1) { 
+			// iの時はスキップする
+			if (s.equals(str)) {
+			// continue文を使用
+			continue;
+			}
+		// i以外を表示
+		System.out.println(s);
+		}  
 	}
-    System.out.println(s);
-    }  
-  }
 }
 
-	  
+
 
 
 
