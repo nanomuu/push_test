@@ -7,7 +7,11 @@ public class Curriculum_New_1_18 {
 	// Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください
 	// 渡されてきた値を引数に順番に代入
 	public static void method() {
-		System.out.println("Hello" + " " + "JavaSE" + " " + "11");
+		String a = "Hello";
+		String b = "JavaSE";
+		int num = 11;
+		String str = String.format(a + " " +b+" "+num);
+		System.out.println(str);
 
 	}
 
@@ -48,13 +52,14 @@ public class Curriculum_New_1_18 {
 		double[] nums = new double[num.length];
 		for (int a = 1; a < num.length; a++) {
 			try {
+				int Totalsum =0;
 				double value = Double.valueOf(num[a]);
 				nums[a] = value;
 			} catch (NumberFormatException ne) {
 				return null;
 			}
 		}
-		System.out.println(nums);
+		System.out.println(nums[1]);
 		return nums;	
 	}
 
@@ -70,15 +75,18 @@ public class Curriculum_New_1_18 {
 	public static void main(String[] args) {
 		// Q1
 		method();
-		// Q2 Q4
+		// Q2 
 		add(1, 2);
 		// Q3
 		int[] array = { 1, 2, 3 };
+		// Q4
 		printArray(array);
 		// Q5 
-		random(1);
+		int[] array2 = random(5);
+		// Q6
+		average(array2);
 		// Q7
-		boolean b = isEven(1);
+		boolean b = isEven(5);
 		if (b) {
 			System.out.println("true");
 		} else {
