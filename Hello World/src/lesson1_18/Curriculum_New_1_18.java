@@ -48,19 +48,21 @@ public class Curriculum_New_1_18 {
 
 	// Q6：引数にQ5で作成したメソッドの返り値を受け取り、受け取った配列の要素の平均値をコンソールに出力するメソッドを作成してください。
 	// ※小数点以下も表示されるようにしてください。
-	public static double[] average(int[] num) {
-		double[] nums = new double[num.length];
+	public static double average(int[] num) {
+		double totalsum =0;
+		
 		for (int a = 1; a < num.length; a++) {
 			try {
-				int Totalsum =0;
-				double value = Double.valueOf(num[a]);
-				nums[a] = value;
+				double value = num[a];
+				totalsum += value;
 			} catch (NumberFormatException ne) {
-				return null;
+			  System.out.println("Error");;
 			}
 		}
-		System.out.println(nums[1]);
-		return nums;	
+	    double average = totalsum/num.length;
+	    
+	    System.out.println("average :"+average);
+	    return average;
 	}
 
 	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
@@ -79,8 +81,9 @@ public class Curriculum_New_1_18 {
 		add(1, 2);
 		// Q3
 		int[] array = { 1, 2, 3 };
-		// Q4
 		printArray(array);
+		// Q4
+		add(1, 2);
 		// Q5 
 		int[] array2 = random(5);
 		// Q6
