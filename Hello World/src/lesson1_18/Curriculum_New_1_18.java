@@ -7,16 +7,16 @@ public class Curriculum_New_1_18 {
 	// Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください
 	// 渡されてきた値を引数に順番に代入
 	public static void method() {
-		String a = "Hello";
-		String b = "JavaSE";
+		String a = "Hello JavaSE";
 		int num = 11;
-		String str = String.format(a + " " +b+" "+num);
+		String str = String.format(a + num);
 		System.out.println(str);
 
 	}
 
 	// Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力するメソッドを作成してください
 	public static void add(int x, int y) {
+		System.out.println(x);
 		System.out.println(x * y);
 	}
 
@@ -29,6 +29,7 @@ public class Curriculum_New_1_18 {
 
 	// Q4：Q2をオーバーロードして引数を小数2つに変更し、引数同士を和算しコンソールに出力してください。
 	public static double add(double x, double y) {
+		System.out.println(x);
 		System.out.println(x + y);
 		return x + y;
 	}
