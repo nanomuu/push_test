@@ -29,11 +29,9 @@ public class Curriculum_New_1_18 {
 
 	// Q4：Q2をオーバーロードして引数を小数2つに変更し、引数同士を和算しコンソールに出力してください。
 	public static double add(double x, double y) {
-		System.out.println(x);
-		System.out.println(x + y);
 		return x + y;
 	}
-
+	
 	// Q5：引数に整数を渡すと、1～100までのランダムな数字を引数の回数分格納して
 	// 格納した値を順番にコンソールで出力後、格納した値を返すメソッドを作成してください。
 	// ※0は出力＆格納しないようにしてください。
@@ -50,9 +48,9 @@ public class Curriculum_New_1_18 {
 	// Q6：引数にQ5で作成したメソッドの返り値を受け取り、受け取った配列の要素の平均値をコンソールに出力するメソッドを作成してください。
 	// ※小数点以下も表示されるようにしてください。
 	public static double average(int[] num) {
-		double totalsum =0;
+		double totalsum = 0;
 		
-		for (int a = 1; a < num.length; a++) {
+		for (int a = 0; a < num.length; a++) {
 			try {
 				double value = num[a];
 				totalsum += value;
@@ -62,7 +60,7 @@ public class Curriculum_New_1_18 {
 		}
 	    double average = totalsum/num.length;
 	    
-	    System.out.println("average :"+average);
+	    System.out.println("average :"+ average);
 	    return average;
 	}
 
@@ -84,7 +82,7 @@ public class Curriculum_New_1_18 {
 		int[] array = { 1, 2, 3 };
 		printArray(array);
 		// Q4
-		add(1, 2);
+		System.out.println(add(1.0,2.0));
 		// Q5 
 		int[] array2 = random(5);
 		// Q6
