@@ -3,13 +3,13 @@ package lesson1_19;
 import java.time.LocalDateTime;
 public class Animal {
 	String name;// インスタンス変数
-	 static int count; // static変数(クラス変数)
+	static int count; // static変数(クラス変数)
 	
-	// コンストラクタの定義(コンストラクタについては後述)
+	// コンストラクタの定義
 	  Animal() {
 	    count++; // countをインクリメント
 	  }
-	
+	  
 	// インスタンスメソッド(nameを取得するため)
 	  public String getName() {
 	    return name;
@@ -25,8 +25,6 @@ public class Animal {
 	    return count;
 	  }
 	
-	
-	  
 	public static void main(String[] args) {
     // Q1：Dogクラスを呼び出して変数に代入し、動物の名前をコンソールに出力してください。
 	// dogという変数名でオブジェクトを作成(インスタンス化)
