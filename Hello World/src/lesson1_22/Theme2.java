@@ -15,10 +15,9 @@
 		
   */
 
- package lesson1_22;
-
-import java.text.SimpleDateFormat;
-import java.util.Date;
+package lesson1_22;
+ //インポート宣言
+import lesson1_22_2.Theme3;
 public class Theme2 {
 
 	public static void main(String[] args) {
@@ -27,13 +26,7 @@ public class Theme2 {
 		System.out.println(sushi.japan);
 		System.out.println(sushi.japan2);
 		System.out.println(sushi.japan3);
-		
-		// 現在の日時を「yyyy-MM-dd H:m:s」形式で変数に代入して、コンソールに出力してください
-		//現在時刻の生成、取得
-		Date now = new Date();
-		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-		String formatted = dateFormat.format(now); // formatメソッドでフォーマット
-		System.out.println(formatted);
+		System.out.println(sushi.formatted);
 	}
 }
 
