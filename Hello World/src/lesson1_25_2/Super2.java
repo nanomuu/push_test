@@ -1,19 +1,17 @@
-package lesson1_25;
+package lesson1_25_2;
 
 import java.util.Random;
 
 public class Super2 {
 	// Q1：フィールドに名前の変数を定義
 	String name;
-	String status;
     int num1;
     int num2;
     int num3;
     int num4;
     int num5;
-    String message;
 	     
-Super2() {
+    public Super2() {
 	Random rand = new Random();
 	num1 = rand.nextInt();
 	num2 = rand.nextInt();
@@ -21,25 +19,7 @@ Super2() {
 	num4 = rand.nextInt();
 	num5 = rand.nextInt();
 	}
-//nameを格納するメソッド
-public void setName(String name) {
-	this.name = name;
-} 
-	 
-//nameを取得するメソッド
-public String getName() {
-	 return name;
-}
-
-//ステータスを格納するメソッド
-public void setName2(String name) {
-	this.status = name;
-	 } 
-	 
-//ステータスを取得するメソッド
-public String getName2() {
-	 return status;
-}
+    
 
 //HPを格納するメソッド
 public void setNumber(int num) {
@@ -89,15 +69,6 @@ public void setNumber5(int num) {
 public int getNumber5() {
 	 return num5;
 }	
-//ステータスを格納するメソッド
-public void setName3(String name) {
-	this.message = name;
-	 } 
-	 
-//ステータスを取得するメソッド
-public String getName3() {
-	 return message;
-}
 }
 
 
