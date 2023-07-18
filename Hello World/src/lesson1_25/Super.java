@@ -21,17 +21,34 @@
  
  */
 package lesson1_25;
-
 import java.util.Random;
 
-public class Super {
-    public static void main(String[] args) {
-    //Super2.javaからSuper2クラスを呼び出す
+//サブクラス
+public class Super extends Super2 {
+// コンストラクタを追加  
+//カプセル化
+private String name;
+
+//生成
+public Super() {
+}
+//代入
+public Super(String name,int hp,int mp,int attack, 
+	    int ability,int defense) {
+	super(hp,mp,attack,ability,defense);
+	this.name = name;
+}
+
+class SuperClass {
+public SuperClass() {
+	System.out.println("Super_Const");
+}
+public SuperClass(String s) {
 	Super2 name = new Super2();
 	Random ran;
 	ran = new Random();
 	name.setName("名前");
-	System.out.println("こんにちは 「 "+name.getName()+" 」 さん"); //status
+	System.out.println("こんにちは 「"+name.getName()+"　」さん");
 	name.setName2("ステータス");
 	System.out.println(name.getName2());
 	name.setNumber(ran.nextInt(1000));
@@ -49,8 +66,9 @@ public class Super {
 	System.out.println(name.getName3());
 }
 }
- 
-     
+}
+
+
 
 
 	 
