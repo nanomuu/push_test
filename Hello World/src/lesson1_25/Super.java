@@ -49,29 +49,13 @@ public class Super extends Super2 {
 		return this.name;
 	}
 
-	//setter
-	public void setName2(String name) {
-		this.name = name;
-	}   
-	//getter
-	public String getName2() {
-		return this.name;
-	}
-	//setter
-	public void setName3(String name) {
-		this.name = name;
-	}   
-	//getter
-	public String getName3() {
-		return this.name;
-	}
 
 	public void Super1() {
 		Random ran;
 		ran = new Random();
 		System.out.println("こんにちは 「 "+getName()+" 」さん");
-		setName2("ステータス");
-		System.out.println(getName2());
+		setName("ステータス");
+		System.out.println(getName());
 		setNumber(ran.nextInt(1000));
 		System.out.println("HP："+getNumber());
 		setNumber2(ran.nextInt(1000));
@@ -83,8 +67,8 @@ public class Super extends Super2 {
 		setNumber5(ran.nextInt(1000));
 		System.out.println("防御力："+getNumber5());
 		System.out.println();
-		setName3("さあ冒険に出かけよう！");
-		System.out.println(getName3());
+		setName("さあ冒険に出かけよう！");
+		System.out.println(getName());
 	}
 }
 
